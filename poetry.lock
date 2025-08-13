@@ -2656,7 +2656,7 @@ whitenoise = "^6.4.0"
 type = "git"
 url = "https://github.com/FAIR-DM/fairdm"
 reference = "development"
-resolved_reference = "963b05b2e95d726e4a8716211ebdf8f8f982efbd"
+resolved_reference = "b448f324a629bb81531e995b1ebfd1b3eeb7190c"
 
 [[package]]
 name = "fairdm-demo"
