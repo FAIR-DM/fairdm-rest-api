@@ -132,7 +132,7 @@ INSTALLED_APPS += [
     "drf_spectacular",  # auto documentation of API
     "rest_framework.authtoken",
     "rest_framework",
-    "corsheaders",
+    # "corsheaders",
 ]
 
 MIDDLEWARE.insert(2, "corsheaders.middleware.CorsMiddleware")
