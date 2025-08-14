@@ -101,7 +101,7 @@ def sample_viewset_factory(sample_type):
         (SampleViewset,),
         {
             "queryset": sample_type["class"].objects.all(),
-            "serializer_class": config.get_serializer_class(),
+            # "serializer_class": config.get_serializer_class(),
         },
     )
     return viewset_class
@@ -115,7 +115,7 @@ def measurement_viewset_factory(measurement_type):
         (MeasurementViewset,),
         {
             "queryset": measurement_type["class"].objects.all(),
-            "serializer_class": config.get_serializer_class(),
+            # "serializer_class": config.get_serializer_class(),
         },
     )
     return viewset_class
