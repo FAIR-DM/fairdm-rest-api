@@ -13,6 +13,7 @@ from django.utils.translation import gettext_lazy as _
 EASY_ICONS = globals().get("EASY_ICONS", {})
 INSTALLED_APPS = globals().get("INSTALLED_APPS", [])
 SITE_DOMAIN = globals().get("SITE_DOMAIN")
+MIDDLEWARE = globals().get("MIDDLEWARE", [])
 
 # django-rest-framework - https://www.django-rest-framework.org/api-guide/settings/
 REST_FRAMEWORK = {
@@ -131,4 +132,7 @@ INSTALLED_APPS += [
     "drf_spectacular",  # auto documentation of API
     "rest_framework.authtoken",
     "rest_framework",
+    "corsheaders",
 ]
+
+MIDDLEWARE.insert(2, "corsheaders.middleware.CorsMiddleware")
